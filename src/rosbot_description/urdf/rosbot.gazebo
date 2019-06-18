@@ -25,6 +25,7 @@
 
   <gazebo>
     <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+      <legacyModeNS>true</legacyModeNS>
     </plugin>
   </gazebo>
 
@@ -86,7 +87,7 @@
         <alwaysOn>true</alwaysOn>
         <updateRate>10.0</updateRate>
         <cameraName>camera</cameraName>
-        <frameName>camera_depth_frame</frameName>
+        <frameName>camera_depth_optical_frame</frameName>
         <imageTopicName>rgb/image_raw</imageTopicName>
         <depthImageTopicName>depth/image_raw</depthImageTopicName>
         <pointCloudTopicName>depth/points</pointCloudTopicName>
